@@ -10,14 +10,8 @@ import GlobalStyles from './styles/GlobalStyles';
 function App() {
   return ( 
     <>   
-    <Header/>
-
 
        <Layout/>
-
-    
-       <Footer/>
-
       <GlobalStyles/>
     </>
   )

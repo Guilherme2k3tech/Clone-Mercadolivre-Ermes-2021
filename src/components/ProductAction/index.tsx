@@ -1,71 +1,70 @@
-import React from "react";
+import { Container,
+   Condition, 
+   Row, 
+   HeartIcon,
+   DispatchTag, 
+   PriceCard, 
+   PriceRow, 
+   InstallmentsInfo,
+   StockStatus,
+   MethodCard,
+   CheckIcon,
+   Actions,
+   Benefits,
+   ShieldIcon,
+  Button} from './styles';
 
-import {
-  Container,
-  Condition,
-  Row,
-  HeartIcon,
-  DispatchTag,
-  PriceCard,
-  PriceRow,
-  InstallmentsInfo,
-  StockStatus,
-  MethodCard,
-  CheckIcon,
-  Actions,
-  Button,
-  Benefits,
-  ShieldIcon,
-} from "./styles";
+
 
 const ProductAction: React.FC = () => {
   return (
     <Container>
-      <Condition>Novo</Condition>
 
-      <Row>
-        <h1>Camiseta Branca da Marca Desconhecida</h1>
-        <HeartIcon />
-      </Row>
+      <Condition>2400 produtos vendidos</Condition>
 
-      <DispatchTag>Enviando normalmente</DispatchTag>
+    <Row>
+      <h1>Gaming PC Core i9-9900k, RTX 3060, 32Gb RAM DDR4 3600mhz.</h1>
+      <HeartIcon/>
+    </Row>
 
-      <PriceCard>
-        <PriceRow>
-          <span className="symbol">R$</span>
-          <span className="fraction">34</span>
-          <span className="cents">99</span>
+    <DispatchTag>Enviando Normalmente</DispatchTag>
+
+    <PriceCard>
+      <PriceRow>
+        <span className="symbol">R$</span>
+        <span className="fraction">27,00,00</span>
+        <span className="cents"> </span>
         </PriceRow>
 
-        <InstallmentsInfo>em 3x de R$ 11,67</InstallmentsInfo>
-      </PriceCard>
+
+      <InstallmentsInfo>em  15x  de  1,800 R$</InstallmentsInfo>
+
+    </PriceCard>
 
       <StockStatus>Estoque disponível</StockStatus>
 
       <MethodCard>
-        <CheckIcon />
+        <CheckIcon/>
 
         <div>
-          <span className="title">Frete grátis</span>
-          <span className="details">Benefício Lorem Ipsum</span>
-          <a href="#" className="more">
-            Ver mais opções
-          </a>
+        <span className="title">Frete Grátis</span>
+        <span className="details">Benefício Lorem</span>
+        <a href="#" className="more">Ver mais opções</a>
         </div>
-      </MethodCard>
+        </MethodCard>
 
-      <Actions>
-        <Button solid>Comprar agora</Button>
-        <Button>Adicionar ao carrinho</Button>
-      </Actions>
+        <Actions>
+          <Button solid>Comprar agora</Button>
+          <Button>Adicionar ao carrinho</Button>
+        </Actions>
+
 
       <Benefits>
         <li>
-          <ShieldIcon />
-          <p>
-            Compra Garantida, receba o produto que está esperando ou devolvemos
-            seu dinheiro.
-          </p>
+          <ShieldIcon/>
+            <p>
+              Receba seu produto, ou devolvemos seu dinheiro
+            </p>
         </li>
       </Benefits>
     </Container>
